@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab4 multer upload ảnh</title>
+</head>
+<body>
+  <form action="/uploadfile" method="post" enctype="multipart/form-data">
+  <h1 style="color: brown;">Lab4 - AND103</h1>
+    <input type="file" name="myfile">
+    <input type="submit" value="Upload File">
+  </form>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- MULTIPLE FILES -->
+
+  <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+      Chon file: <input type="file" name="myFiles" multiple>
+      <input type="submit" value="Upload your files" />
+  </form>
+
+  <br>
+  <hr>
+  <br>
+  <!--   PHOTO-->
+
+  <form action="/upload/photo" enctype="multipart/form-data" method="POST">
+      <input type="file" name="myImage" accept="image/*" />
+      <input type="submit" value="Upload Photo" />
+  </form>
+</body>
+</html>
